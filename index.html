@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="index, follow">
+        <meta name="referrer" content="origin-when-cross-origin">
+        <meta property="og:title" content="Portfolio | Hee Su">
+        <meta property="og:description" content="2022 Javascript Website Portfolio of Heesu's works">
+        <meta property="og:type" content="article">
+        <meta property="og:url" content="">
+        <meta property="og:image:width" content="1068">
+        <meta property="og:image:height" content="646">
+        <meta name="description" content="웹 프론트엔드 개발자 정희수 포트폴리오">
+        <meta name="author" content="Chung Hee Su">
+        <meta name="keywords" content="프론트엔드, 프론트엔드 포트폴리오, 포트폴리오, 웹퍼블리셔, 웹사이트 포트폴리오, 개발자, 웹사이트, Frontend, Frontend Portfolio, Website Portfolio, Frontend Developer">  
+        <title>Portfolio | Hee Su</title>
+        <link rel="icon" type="image/png" href="./assets/image/webLogo.png" sizes="192x192">
+        <!-- library-->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+            defer
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
+            defer
+        ></script>
+        <!-- style -->
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body>
+        <!-- cursor event element-->
+        <!-- transition background-->
+        <section class="trans-bg">
+            <div class="cursor-image-block">
+                <video src="./assets/image/home.mp4" class="cursor-image" muted loop autoplay preload="true" ></video>
+                <video src="./assets/image/project01.mp4" class="cursor-image" muted loop autoplay preload="true" ></video>
+                <video src="./assets/image/project02.mp4" class="cursor-image" muted loop autoplay preload="true" ></video>
+                <video src="./assets/image/project03.mp4" class="cursor-image" muted loop autoplay preload="true" ></video>
+                <img src="./assets/image/project04.jpg" class="cursor-image" alt="">
+                <img src="./assets/image/about.jpg" class="cursor-image" alt="">
+                <img src="./assets/image/moreInfo.jpg" class="cursor-image" alt="">
+            </div>
+           <img src="./assets/video/noise.gif" class="noise" alt="">
+           <div class="menu-wrapper">
+           <ul class="menu-block">
+            <li class="menu"><span onclick="onListClick(0)" onmouseenter="onListOver(0)" onmouseleave="onListLeave(0)">Home</span></li>
+            <li class="menu"><span onclick="onListClick(1)" onmouseenter="onListOver(1)" onmouseleave="onListLeave(1)">Project 01</span></li>
+            <li class="menu"><span onclick="onListClick(2)" onmouseenter="onListOver(2)" onmouseleave="onListLeave(2)">Project 02</span></li>
+            <li class="menu"><span onclick="onListClick(3)" onmouseenter="onListOver(3)" onmouseleave="onListLeave(3)">Project 03</span></li>
+            <li class="menu"><span onclick="onListClick(4)" onmouseenter="onListOver(4)" onmouseleave="onListLeave(4)">Project 04 / 05</span></li>
+            <li class="menu"><span onclick="onListClick(5)" onmouseenter="onListOver(5)" onmouseleave="onListLeave(5)">About</span></li>
+            <li class="menu"><span onclick="onListClick(6)" onmouseenter="onListOver(6)" onmouseleave="onListLeave(6)">More Info</span></li>
+           </ul>
+           <div class="menu-title-block">
+            <span class="menu-title">Project 00</span>
+        </div>
+        </div>
+        </section>
+        <!-- Front -->
+        <section class="landing">
+            <div class="cursor-block">
+                <div class="cursor-circle">
+                </div>
+                <span class="cursor-content">SOUND</span>
+            </div>
+
+            <div class="img-video">
+                <div class="img-cover"></div>
+                <video src="./assets/video/IntroVideo.mp4" muted loop autoplay preload="true" class="front-video" onclick="onVideoClick()"></video>
+                <video src="./assets/video/IntroVideo_mobile.mp4" muted loop autoplay preload="true" class="front-video-mobile" onclick="onVideoClick()"></video>
+            </div>
+            
+            <header class="header">
+                <div class="home">
+                    <div class="logo">
+                        <img src="./assets/image/logo.jpg" onclick="onHomeClick()" alt="">
+                    </div>
+                    <div class="menu-bar">
+                        <nav class="menu-lines" onclick="onMenuClick()" onmouseover="onMenuOver()"
+                        onmouseleave="onMenuLeave()">
+                            <span class="menu-line"></span>
+                            <span class="menu-line"></span>
+                            <span class="menu-line"></span>
+                        </nav>
+                    </div>
+                    <div class="progress-block" onclick="onProgressClick()">
+                        <svg width="40" height="40" >
+                            <circle r="15" cx="20" cy="20" class="track"></circle>
+                            <circle r="15" cx="20" cy="20" class="progress"></circle>
+                          </svg>
+                          <img src="./assets/image/arrowDown.png" alt="" >
+                    </div>
+                </div>
+            </header>
+            <div class="title-contents">
+            </div>    
+        </section>
+        
+        <!-- About-->
+        <section class="about-wrapper">
+            <video src="./assets/video/FrontVideo.mp4" loop autoPlay muted preload></video>  
+            <div class="bk-bg"></div>
+            <svg class="svg-container" width="200" height="200" viewBox="0 0 200 350" preserveAspectRatio="none">
+                <defs>
+                    <mask id="mask" x="0" y="0" width="100%" height="100%">
+                        <rect x="0" y="0" width="100%" height="100%"/>
+                        <text class="svg-text-1 svg-text" x="10%" y="25%">Project 00</text>
+                        <text class="svg-text-2 svg-text" x="10%" y="40%">Vanilla JS</text>
+                        <text class="svg-text-3 svg-text" x="10%" y="50%">WebGL SCSS</text>
+                        <text class="svg-text-4 svg-text" x="10%" y="60%">Responsive</text>
+                        <text class="svg-text-5 svg-text" x="10%" y="70%">Interactive</text>
+                    </mask>
+                </defs>
+                <rect x="0" y="0" width="100%" height="100%"/>
+            </svg>
+        </section>
+
+        <section class="portfolio-0">
+            <div class="desc-container">
+                <h2>Project 00</h2>
+                <p class="desc-detail">TERM : Nov. 21 - Nov. 29</p>
+                <p>Vanilla JS, WebGL(three.js)로 구현한 포트폴리오 페이지입니다.<br />웹 개발 작업물에 대한 소개와 각 페이지 별 Demo, Github 링크가 첨부되어 있습니다.<br /><br />
+                    해당 페이지는 반응형 웹 인터랙션을 지향합니다.<br />Blender gltf 모델과 SVG 요소, Raycast, Shader 학습 및 적용하여 인터랙션을 구현했고,<br /> Frame Rate 속도 및 렌더링 최적화를 염두에 두고 개발했습니다.<br /><br />
+                    SEO, Cross-browsing을 고려한 벤더-프리픽스 적용했습니다. </p>
+            </div>
+        </section>
+
+        <!-- portfolio 1 -->
+        <section class="portfolio contents portfolio-1">
+            <article class="content-wrapper">
+                <div class="content-container content-container-1 content">
+                    <div class="desc">
+                        <h4 class="desc-category text">Project 01</h4>
+                        <div class="title-wrapper">
+                        <h2 class="desc-title text desc-title-1">Galaxy ZFlip4 Clone</h2>
+                    </div>
+                        <h3 class="desc-skill-set text">JS / React / SCSS / Firebase</h3>
+                        <div class="desc-content-wrapper desc-content-wrapper-1">
+                        <p class="desc-content desc-1-1">
+                            Samsung Galaxy Z Flip4 랜딩 페이지 클론 프로젝트입니다.
+<br />
+<br />
+React 프레임워크를 사용, 기기 별 대응되는 반응형 웹(mobile, tablet, laptop, desktop)을 적용한 마크업과 페이지 내 인터랙티브 요소를 구현한 프로젝트입니다.
+<br />
+<br />
+크로스 브라우징 이슈 해결을 위한 벤더-프리픽스를 적용하였습니다.
+                        </p>
+                        <p class="desc-content desc-1-2">
+                            인터랙션은 브라우저 내 직접적 DOM 요소 접근을 통해 스타일링 속성을 변경하였고, Reflow / Repaint 현상 축소 및 렌더링 최적화를 위한 transform, opacity 스타일 요소변경을 적극적으로 사용하였습니다.<br /><br />원본 사이트와의 렌더링 성능 비교표는 README.md에 첨부되어 있습니다.
+<br />
+<br />
+해당 프로젝트를 통해 렌더링 최적화의 중요성과 SCSS 적용, 반응형을 위한 조건부 렌더링 구현과 사전 디자인 / 스타일 가이드 규정의 필요성을 느꼈습니다.
+                        </p>
+                    </div>
+                        <div class="btns-container">
+                            <a class="link" href="https://github.com/heesu-chung/z-flip4-clone-site"
+                             onmouseover="btnMouseOver(0)" onmouseleave="btnMouseLeave(0)"><button class="btn" >README</button></a>
+                            <a class="link" href="https://z-flip4-clone.web.app/"  onmouseover="btnMouseOver(1)" onmouseleave="btnMouseLeave(1)"><button class="btn">Demo</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="img-container img-container-1">
+                    <div class="blank"></div>
+            <!-- mobile-tablet-desktop video -->
+                    <video
+                src="./assets/video/mobile_scroll.mp4"
+                class="mobile-scroll-video"
+                id="mobile-scroll-video"
+                muted
+                autoplay
+                loop
+                preload="auto"
+                style="display: none"
+            ></video>
+            <video
+                src="./assets/video/tablet_scroll.mp4"
+                class="tablet-scroll-video"
+                id="tablet-scroll-video"
+                muted
+                autoplay
+                loop
+                preload="auto"
+                style="display: none"
+            ></video>
+            <video
+                src="./assets/video/desktop_scroll.mp4"
+                class="desktop-scroll-video"
+                id="desktop-scroll-video"
+                muted
+                autoplay
+                loop
+                preload="auto"
+                style="display: none"
+            ></video>
+            <!-- interaction -->        
+            <video
+                src="./assets/interaction/interaction01.mp4"
+                class="interaction"
+                id="interaction"
+                muted
+                autoplay
+                loop
+                preload="auto"
+                style="display: none"
+            ></video>
+            <video
+                src="./assets/interaction/interaction02.mp4"
+                class="interaction"
+                id="interaction"
+                muted
+                autoplay
+                loop
+                preload="auto"
+                style="display: none"
+            ></video>
+            <video
+                src="./assets/interaction/interaction03.mp4"
+                class="interaction"
+                id="interaction"
+                muted
+                autoplay
+                loop
+                preload="auto"
+                style="display: none"
+            ></video>
+            <video
+                src="./assets/interaction/interaction04.mp4"
+                class="interaction"
+                id="interaction"
+                muted
+                autoplay
+                loop
+                preload="auto"
+                style="display: none"
+            ></video>
+            <video
+                src="./assets/interaction/interaction05.mp4"
+                class="interaction"
+                id="interaction"
+                muted
+                autoplay
+                loop
+                preload="auto"
+                style="display: none"
+            ></video>
+            <video
+                src="./assets/interaction/interaction06.mp4"
+                class="interaction"
+                id="interaction"
+                muted
+                autoplay
+                loop
+                preload="auto"
+                style="display: none"
+            ></video>
+            <video
+                src="./assets/interaction/interaction07.mp4"
+                class="interaction"
+                id="interaction"
+                muted
+                autoplay
+                loop
+                preload="auto"
+                style="display: none"
+            ></video>
+            <video
+                src="./assets/interaction/interaction08.mp4"
+                class="interaction"
+                id="interaction"
+                muted
+                autoplay
+                loop
+                preload="auto"
+                style="display: none"
+            ></video>
+            <video
+                src="./assets/interaction/interaction09.mp4"
+                class="interaction"
+                id="interaction"
+                muted
+                autoplay
+                loop
+                preload="auto"
+                style="display: none"
+            ></video>
+            <video
+                src="./assets/interaction/interaction10.mp4"
+                class="interaction"
+                id="interaction"
+                muted
+                autoplay
+                loop
+                preload="auto"
+                style="display: none"
+            ></video>
+            <video
+                src="./assets/interaction/interaction11.mp4"
+                class="interaction"
+                id="interaction"
+                muted
+                autoplay
+                loop
+                preload="auto"
+                style="display: none"
+            ></video>
+            <video
+                src="./assets/interaction/interaction12.mp4"
+                class="interaction"
+                id="interaction"
+                muted
+                autoplay
+                loop
+                preload="auto"
+                style="display: none"
+            ></video>
+            <video
+                src="./assets/interaction/interaction13.mp4"
+                class="interaction"
+                id="interaction"
+                muted
+                autoplay
+                loop
+                preload="auto"
+                style="display: none"
+            ></video>
+            <video
+                src="./assets/interaction/interaction14.mp4"
+                class="interaction"
+                id="interaction"
+                muted
+                autoplay
+                loop
+                preload="auto"
+                style="display: none"
+            ></video>
+            <video
+                src="./assets/interaction/interaction15.mp4"
+                class="interaction"
+                id="interaction"
+                muted
+                autoplay
+                loop
+                preload="auto"
+                style="display: none"
+            ></video>
+            <video
+                src="./assets/interaction/interaction16.mp4"
+                class="interaction"
+                id="interaction"
+                muted
+                autoplay
+                loop
+                preload="auto"
+                style="display: none"
+            ></video>
+            <video
+                src="./assets/interaction/zflipInteraction.mp4"
+                class="interaction-video"
+                id="interaction-video"
+                muted
+                autoplay
+                loop
+                preload="auto"
+                style="display: none"
+            ></video>
+
+                </div>
+                <div class="details-container">
+                    <div class="details-block">
+                        <div class="detail detail-term">
+                            <h3>TERM</h3>
+                            <span>Sep. 24 - Nov. 4</span>
+                        </div>
+                        <div class="detail detail-stack">
+                            <h3>STACK</h3>
+                            <span class="detail-stack">Javascript</span>
+                            <span class="detail-stack">React</span>
+                            <span class="detail-stack">SCSS</span>
+                            <span class="detail-stack">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- portfolio 2 -->
+        <section class="portfolio contents portfolio-2">
+            <article class="content-wrapper">
+                <div class="content-container content content-right">
+                    <div class="desc">
+                        <h4 class="desc-category text">Project 02</h4>
+                        <div class="title-wrapper">
+                        <h2 class="desc-title text desc-title-2">Archive Intro</h2>
+                        </div>
+                        <h3 class="desc-skill-set text">React / Recoil / styled-components / @react-three-fiber / firebase</h3>
+                        <div class="desc-content-wrapper desc-content-wrapper-2">
+                        <p class="desc-content desc-2 desc-2-1">
+                            컴퓨터 그래픽스, 인터랙티브 시각화 강의 중 구현한 OpenGL 프로젝트들과 2019년부터 개인 프로젝트의 일환으로 작업해온 2D / 3D 디지털 미디어 콘텐츠 및 외주 작업물들을 소개하는 웹페이지입니다.
+<br />
+<br />
+반응형 웹으로 3개 페이지 인터랙션을 구현하였습니다. 
+                        </p>
+                        <p class="desc-content desc-2 desc-2-2">
+                            프레임워크로 React를 사용하였고, 전역 state 관리를 위한 recoil 적용 및 three.js 일부 기능을 사용하여 블렌더로 작업한 gltf 파일을 로드하였습니다. 이외 css 애니메이션 구현 및 video 태그를 사용했습니다.
+<br />
+<br />
+이외 상세 인터랙션 구현 사항 및 회고는 README.md에 작성되어 있습니다.
+                        </p>
+                        <p class="desc-content desc-2 desc-2-3">
+                            해당 프로젝트를 진행하며, redux 외 전역 state 관리 라이브러리(recoil)를 사용하는 경험을 했습니다.
+<br />
+<br />
+구현 중 UI, 인터랙션, 애니메이션으로 인한 성능 하락 이슈가 발생했었고, 사용자 경험 관점에서 안정적 Frame Rate를 제공, 시각적 편안함에 초점을 맞춰 이미지 / 비디오 리소스 Resize 및 최적화를 추가로 진행하였습니다.
+                        </p>
+                        </div>
+                        <div class="btns-container">
+                            <a class="link" href="https://github.com/heesu-chung/archive-intro"  onmouseover="btnMouseOver(2)" onmouseleave="btnMouseLeave(2)"><button class="btn">README</button></a>
+                            <a class="link" href="https://archive-640e9.web.app/"  onmouseover="btnMouseOver(3)" onmouseleave="btnMouseLeave(3)"><button class="btn">Demo</button></a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="img-container img-container-2">
+                    <div class="blank"></div>
+                    <div class="img-parallax-container">
+                        <!-- thinker img -->
+                        <img class="sqr thinker-sqr thinker-img" src="./assets/archive/thinker1.gif" alt="">
+                        <img class="sqr thinker-sqr thinker-img" src="./assets/archive/thinker2.gif" alt="">
+                        <img class="sqr thinker-sqr thinker-img" src="./assets/archive/thinker3.gif" alt="">
+                        <video class="video thinker-video thinker-img" src="./assets/archive/thinkerVideo1.mp4" muted loop autoplay></video>
+                        <video class="video thinker-video thinker-img" src="./assets/archive/thinkerVideo2.mp4" muted loop autoplay></video>
+                        <!-- kodekat img-->
+                        <img class="wide kk-wide kk-img" src="./assets/archive/kodekat1.gif" alt="">
+                        <img class="wide kk-wide kk-img" src="./assets/archive/kodekat2.jpg" alt="">
+                        <img class="sqr kk-sqr kk-img" src="./assets/archive/kodekat3.jpg" alt="">
+                        <img class="wide kk-wide kk-img" src="./assets/archive/kodekat4.jpg" alt="">
+                        <img class="sqr kk-sqr kk-img" src="./assets/archive/kodekat5.png" alt="">
+                        <img class="wide kk-wide kk-img" src="./assets/archive/kodekat6.jpg" alt="">
+                        <!-- archive img -->
+                        <img class="a4 archive-a4 archive-img" src="./assets/archive/archive1.png" alt="">
+                        <img class="a4 archive-a4 archive-img" src="./assets/archive/archive2.jpg" alt="">
+                        <img class="long archive-long archive-img" src="./assets/archive/archive3.png" alt="">
+                        <img class="wide archive-wide archive-img" src="./assets/archive/archive4.png" alt="">
+                        <img class="wide archive-wide archive-img" src="./assets/archive/archive5.gif" alt="">
+                        <img class="sqr archive-sqr archive-img" src="./assets/archive/archive6.gif" alt="">
+                        <img class="wide archive-wide archive-img" src="./assets/archive/archive7.gif" alt="">
+                        <img class="wide archive-wide archive-img" src="./assets/archive/archive8.jpg" alt="">
+                        <img class="sqr archive-sqr archive-img" src="./assets/archive/archive9.jpg" alt="">
+                    </div>
+                </div>
+                
+
+                </div>
+                <div class="details-container">
+                    <div class="details-block">
+                        <div class="detail detail-term">
+                            <h3>TERM</h3>
+                            <span>Jun. 28 - Jul. 7</span>
+                        </div>
+                        <div class="detail detail-stack">
+                            <h3>STACK</h3>
+                            <span class="detail-stack">React</span>
+                            <span class="detail-stack">Recoil</span>
+                            <span class="detail-stack">styled-components</span>
+                            <span class="detail-stack">@react-three-fiber</span>
+                            <span class="detail-stack">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- portfolio 3 -->
+        <section class="portfolio contents portfolio-3">
+            <article class="content-wrapper content-wrapper-center">
+                <div class="content-container content">
+                    <div class="desc">
+                        <h4 class="desc-category text">Project 03</h4>
+                        <div class="title-wrapper">
+                        <h2 class="desc-title text desc-title-3">CSSDA Meta Visualization</h2>
+                        </div>
+                        <h3 class="desc-skill-set text">React, redux, styled-components, @react-three/fiber, Firebase</h3>
+                        <div class="desc-content-wrapper desc-content-wrapper-3">
+                        <p class="desc-content desc-3 desc-3-1">
+                            React 환경에서 WebGL 사용 편의성을 위한 @react-three/fiber 라이브러리를 적용한 프로젝트입니다.<br>(이미지 클릭시 인터랙션)
+                            <br />
+                            <br />
+                            매일 높은 점수를 획득한 웹 페이지에 WOTD awards를 부여하는 CSS Design Awards 사이트 내에 1월부터 7월까지의 WOTD 사이트를 방문, 자체적으로 인터랙션 요소들을 세분화하여 시각화 차트로 구성한 프로젝트입니다. 
+                            <br />
+                            <br />
+                            WebGL 카메라 위치와 Geometry 배치를 통한 차트 연출의 다양성, 시각요소의 커스터마이징 기능 및 데이터베이스(Firebase)로부터 각각 파트 목적에 맞는 데이터를 가져오도록 구현되었습니다.  
+                        </p>
+                        </div>
+                        <div class="btns-container">
+                            <a class="link" href="https://github.com/heesu-chung/cssda-meta-visualization"  onmouseover="btnMouseOver(4)" onmouseleave="btnMouseLeave(4)"><button class="btn">README</button></a>
+                            <a class="link" href="https://css-awards-trend.web.app/"  onmouseover="btnMouseOver(5)" onmouseleave="btnMouseLeave(5)"><button class="btn">Demo</button></a>
+                        </div>
+                    </div>
+                </div>
+              
+                
+                <div class="img-container img-container-3">
+                
+                    <video
+                    src="./assets/cssda/cssda00.mp4"
+                    class="cssda"
+                    id="cssda"
+                    muted
+                    autoplay
+                    loop
+                    preload="auto"
+                    style="display: none"
+                ></video>
+                    <video
+                    src="./assets/cssda/cssda03.mp4"
+                    class="cssda"
+                    id="cssda"
+                    muted
+                    autoplay
+                    loop
+                    preload="auto"
+                    style="display: none"
+                ></video>
+                    <video
+                    src="./assets/cssda/cssda02.mp4"
+                    class="cssda"
+                    id="cssda"
+                    muted
+                    autoplay
+                    loop
+                    preload="auto"
+                    style="display: none"
+                ></video>
+                    <video
+                    src="./assets/cssda/cssda01.mp4"
+                    class="cssda"
+                    id="cssda"
+                    muted
+                    autoplay
+                    loop
+                    preload="auto"
+                    style="display: none"
+                ></video>
+                   
+                    <video
+                    src="./assets/cssda/cssda04.mp4"
+                    class="cssda"
+                    id="cssda"
+                    muted
+                    autoplay
+                    loop
+                    preload="auto"
+                    style="display: none"
+                ></video>
+                    <video
+                    src="./assets/cssda/cssda05.mp4"
+                    class="cssda"
+                    id="cssda"
+                    muted
+                    autoplay
+                    loop
+                    preload="auto"
+                    style="display: none"
+                ></video>
+                    <video
+                    src="./assets/cssda/cssda06.mp4"
+                    class="cssda"
+                    id="cssda"
+                    muted
+                    autoplay
+                    loop
+                    preload="auto"
+                    style="display: none"
+                ></video>
+                    <video
+                    src="./assets/cssda/cssda07.mp4"
+                    class="cssda"
+                    id="cssda"
+                    muted
+                    autoplay
+                    loop
+                    preload="auto"
+                    style="display: none"
+                    
+                ></video>
+                <video
+                src="./assets/cssda/cssda08.mp4"
+                class="cssda"
+                id="cssda"
+                muted
+                autoplay
+                loop
+                preload="auto"
+                style="display: none"
+            ></video>
+                </div>
+    
+                <div class="details-container">
+                    <div class="details-block">
+                        <div class="detail detail-term">
+                            <h3>TERM</h3>
+                            <span>Jul. 9 - Jul. 13</span>
+                        </div>
+                        <div class="detail detail-stack">
+                            <h3>STACK</h3>
+                            <span class="detail-stack">React</span>
+                            <span class="detail-stack">redux</span>
+                            <span class="detail-stack">styled-components</span>
+                            <span class="detail-stack">@react-three/fiber</span>
+                            <span class="detail-stack">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- portfolio 4 -->
+        <section class="portfolio contents portfolio-4">
+            <article class="content-wrapper">
+               
+                <div class="content-container content content-right">
+                    <div class="desc">
+                        <h4 class="desc-category text">Project 04</h4>
+                        <div class="title-wrapper">
+                        <h2 class="desc-title text desc-title-4">Vue / React Blog</h2>
+                        </div>
+                        <h3 class="desc-skill-set text">Vue / vuex / React / redux / Typescript / Firebase</h3>
+                        <div class="desc-content-wrapper desc-content-wrapper-4">
+                        <p class="desc-content desc-4 desc-4-1">
+                            개발을 하면서 필요한 지식들과 개발 과정의 트러블 슈팅 과정을 기록하고 필요시 열람하기 위한 블로그 제작 프로젝트입니다. CRUD 구현하였으며, firebase DB와의 비동기 통신과 기본적인 블로그 기능들을 구현하였습니다.
+                            <br />
+                            <br />
+                            동일 스타일링을 적용한 Vue / vuex 블로그, Typescript / React / redux 블로그를 각각 구현하였습니다.
+                            <br />
+                            <br />
+                            페이지 디자인은 kakao brunch 디자인을 참고했습니다.
+                        </p>
+                        <p class="desc-content desc-4 desc-4-2">
+                            데이터베이스(Firebase) 접근 및 필요에 따른 데이터 배열을 다뤄서 게시글 작성 및 읽기 기능을 구현하였고, 이외 카테고리 데이터 입력 및 활용할 수 있도록 하였습니다.
+                            <br />
+                            <br />
+                            과거 제작했던 Vue2와 비교, Vue3의 새로운 문법의 효용성을 체감했고, 동일한 CRUD 프로젝트를 React로도 제작해보며 프레임워크 차이 및 서로 다른 개발환경을 경험하였습니다.
+                        </p>
+                        </div>
+                        <div class="btns-container">
+                            <a class="link" href="https://github.com/heesu-chung/blog-vue-vuex"  onmouseover="btnMouseOver(6)" onmouseleave="btnMouseLeave(6)"><button class="btn">README</button></a>
+                            <a class="link" href="https://vue-blog-3e728.web.app/home"  onmouseover="btnMouseOver(7)" onmouseleave="btnMouseLeave(7)"><button class="btn">Demo</button></a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="img-container img-container-4">
+                    <div class="video-wrapper">
+                        <video src="./assets/blog/blog01.mp4" preload muted loop autoPlay class="video-top video-blog"></video>
+                        <video src="./assets/blog/blog02.mp4" preload muted loop autoPlay class="video-bottom video-blog"></video>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <div class="details-block">
+                        <div class="detail detail-term">
+                            <h3>TERM</h3>
+                            <span>Jun. 21 - Jun. 28</span>
+                        </div>
+                        <div class="detail detail-stack">
+                            <h3>STACK</h3>
+                            <span class="detail-stack">Vue</span>
+                            <span class="detail-stack">vuex</span>
+                            <span class="detail-stack">React</span>
+                            <span class="detail-stack">Typescript</span>
+                            <span class="detail-stack">redux</span>
+                            <span class="detail-stack">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- introduction -->
+        <section class="intro">
+            <div class="desc-container">
+                <p class="desc-detail">About</p>
+                <p>고려대학교에서 디자인조형학부(산업정보디자인)와 컴퓨터학과를 이중전공하였고, 3년 반의 프로그래밍 동아리 활동을 하며 디자인과 
+                    개발을 연결하는 작업들을 해왔습니다. 현재는 프론트엔드 개발 공부를 하고 있으며, 지난 3년간 개인 프로젝트의 일환으로 캐릭터를 활용한 
+                    3D / 2D 디지털 미디어 콘텐츠 기획, 디자인 및 제작을 해오고 있습니다. 
+                    <br />
+                    <br />
+                    대학 재학 당시 OpenGL과 C언어를 이용한 3D 시각화 프로그래밍을 컴퓨터 그래픽스, 인터랙티브 시각화 수업을 통해 접하고 실습한 경험이
+                    있으며, Javascript를 중심으로 한 프론트엔드 분야를 학습해나가고 있습니다.</p>
+            </div>
+        </section>
+        <!-- contact -->
+        <section class="contact">
+            <article class="contact-content-wrapper">
+                <div class="contact-content-block-left content-block">
+                    <div class="contact-skill contact-content">
+                        <h3 class="skill-title title">Skills</h3>
+                        <h4 class="skill-desc description">개발시 사용하는 스택이며, 자력으로 학습 및 트러블 슈팅이 가능합니다</h4>
+                        <ul>
+                            <li>Javascript</li>
+                            <li>SCSS</li>
+                            <li>WebGL</li>
+                            <li>React</li>
+                            <li>styled-components</li>
+                            <li>Redux</li>
+                            <li>Firebase</li>
+                            <li>Github</li>
+                        </ul>
+                    </div>
+                    <div class="contact-timeline contact-content">
+                        <h3 class="timeline-title title">Graduation</h3>
+                        <h4 class="timeline-desc date">2021. 02</h4>
+                        <h4 class="timeline-content description">고려대학교 디자인조형학부, 컴퓨터학과(이중 전공) 졸업</h4>
+                    </div>
+                    <div class="contact-certificate contact-content">
+                        <h3 class="certificate-title title">Certificate</h3>
+                        <h4 class="certificate-content date">2020. 08</h4>
+                        <h4 class="certificate-content description">TOEIC <br />975 점</h4>
+                    </div>
+                
+                    <div class="contact-title contact-content">
+                        <h3 class="certificate-title title">Contact</h3>
+                    </div>
+                    <div class="contact-github contact-content">
+                        <span class="github-content description">Github : </span>
+                        <a href="https://github.com/heesu-chung" class="link"><button class="btn">Visit</button></a>
+                    </div>
+                    <div class="contact-resume contact-content">
+                        <span class="resume-content description">Resume : </span>
+                        <a class="link" href="./assets/resume.pdf" ><button class="btn">More</button></a>
+                    </div>
+                    <div class="contact-email contact-content">
+                        <span class="skill-desc description">Email :</span>
+                        <span class="skill-desc description">chout1213@gmail.com</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!-- footer -->
+        <footer class="footer">
+            <p>©2022 Portfolio | Chung Hee Su</p>
+            <p>All Rights Reserved</p>
+        </footer>
+
+        <!-- js -->
+        <script src="./js/textTransition.js" defer></script>
+        <script src="./js/btnTransition.js" defer></script>
+        <script src="./js/btnClick.js" defer></script>
+        <script src="./js/progressCircle.js" defer></script>
+        <script src="./js/blog.js" defer></script>
+        <script src="./js/videoControl.js" defer></script>
+        <script src="./js/mouseCursorEvent.js" defer></script>
+    
+        <script type="module" src="./js/zflip.js" defer></script>
+        <script type="module" src="./js/archive.js" defer></script>
+        <script type="module" src="./js/imageParallax.js" defer></script>
+        <script type="module" src="./js/cssda.js" defer></script>
+
+        <script>
+            scrollTo({top: 0, behavior: 'smooth'})
+        </script>
+    </body>
+</html>
