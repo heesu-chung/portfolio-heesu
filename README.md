@@ -10,7 +10,7 @@
   
 ## 기술 스택  
   
-- Javascript, SCSS, Three.js, GSAP  
+Javascript, SCSS, Three.js, GSAP  
   
   
   
