@@ -21,7 +21,7 @@ Vanilla JS 와 WebGL(Three.js)로 구현한 반응형 인터랙티브 웹 페이
 Three.js 라이브러리로 3D 애니메이션 및 인터랙션 구현, 자바스크립트 DOM 속성값 접근을 통해 동적 화면을 구현하는 것에 초점을 맞춘 프로젝트입니다.
   
   
-기존에 사용하던 React 프레임워크 대신 Javascript 만을 사용하였으며, SCSS 적용 및 Three.js / GSAP 라이브러리를 사용하여 스크롤, 마우스 이동 및 클릭 기반 인터랙션을 구현하였습니다. SEO와 cross-browsing을 고려한 벤더-프리픽스를 코드에 작성했습니다.     
+Vanilla Javascript, SCSS 적용 및 Three.js / GSAP 라이브러리를 사용하여 스크롤, 마우스 이동 및 클릭 기반 인터랙션을 구현하였습니다. SEO와 cross-browsing을 고려한 벤더-프리픽스를 코드에 작성했습니다.     
   
 개발자도구 Lighthouse 보고서 
   
