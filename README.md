@@ -59,7 +59,7 @@ Three.js 라이브러리로 3D 애니메이션 및 인터랙션 구현, 자바�
   
 ### Project 02  
   
-- Vertex, Fragment 셰이더 매핑 및 웨이브 시각 효과 구현  
+- Vertex, Fragment 셰이더 웨이브 시각 효과 구현  
 - 스크롤 기반 Parallax 이미지 구현(cuvier-bezier 트랜지션 타이밍 구현)  
   
   
