@@ -8,6 +8,11 @@
 11월 21일 ~ 11월 29일  
 1인 개발  
   
+## 기술 스택  
+  
+- Javascript, SCSS, Three.js, GSAP  
+  
+  
   
 ## 프로젝트 개요  
   
@@ -81,10 +86,6 @@ Three.js 라이브러리로 3D 애니메이션 및 인터랙션 구현, 자바�
   
 - 스크롤 기반 이미지 위치 변경  
   
-  
-## 기술 스택  
-  
-- Javascript, SCSS, Three.js, GSAP  
   
   
 ## 회고  
