@@ -25,7 +25,7 @@ Three.js 라이브러리로 3D 애니메이션 및 인터랙션 구현, 자바�
   
 - 스크롤 시 SVG 요소를 활용한 콘텐츠 별 진행도 원형 시각화 구현  
 - 스크롤 버튼 클릭 시 다음 콘텐츠로 스크롤 이동 구현  
-- 반응형 스타일링(767px 이하 mobile / 768px - 1023px tablet / 1024px - 1440px laptop / 1441px 이상 desktop) 및 resize addEventListener  
+- 반응형 마크업 작성(767px 이하 mobile / 768px - 1023px tablet / 1024px - 1440px laptop / 1441px 이상 desktop) 및 resize addEventListener  
   
   
 ### 영상 콘텐츠  
