@@ -40,7 +40,7 @@ Three.js 라이브러리로 3D 애니메이션 및 인터랙션 구현, 자바�
 - 반응형 마크업 작성(767px 이하 mobile / 768px - 1023px tablet / 1024px - 1440px laptop / 1441px 이상 desktop) 및 resize addEventListener  
 - SVG Blend 구현  
   
-### 영상 콘텐츠  
+### 최상단 영상
 ![02](https://user-images.githubusercontent.com/68191058/205035374-99bde023-ba6c-4bef-ae00-39c8026baf19.gif)  
   
 - 버튼 클릭 이벤트 발생시 video 태그 muted 속성 변경 구현  
