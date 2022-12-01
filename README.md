@@ -16,7 +16,7 @@
   
 ## 프로젝트 개요  
   
-### Vanilla Javascript / WebGL 포트폴리오 페이지
+### Javascript / WebGL 포트폴리오 페이지
 Vanilla JS 와 WebGL(Three.js)로 구현한 반응형 인터랙티브 웹 페이지입니다.  
 Three.js 라이브러리로 3D 애니메이션 및 인터랙션 구현, 자바스크립트 DOM 속성값 접근을 통해 동적 화면을 구현하는 것에 초점을 맞춘 프로젝트입니다.
   
