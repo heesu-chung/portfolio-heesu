@@ -22,6 +22,7 @@ Three.js 라이브러리로 3D 애니메이션 및 인터랙션 구현, 자바�
 ## 기능 구현  
   
 ### Global  
+![08](https://user-images.githubusercontent.com/68191058/205038623-a2268873-f9a3-47c2-9cbe-e9a1154474f7.gif)  
 ![01](https://user-images.githubusercontent.com/68191058/205035241-caa300c0-c1d2-4e30-a4f1-baf1e208051e.gif)  
   
 - 스크롤 시 SVG 요소를 활용한 콘텐츠 별 진행도 원형 시각화 구현  
