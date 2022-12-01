@@ -1,5 +1,4 @@
 # Portfolio | Hee Su 
-# Project 00  
 
 ## Demo Link
 
