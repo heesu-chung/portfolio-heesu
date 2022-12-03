@@ -92,7 +92,7 @@ Vanilla Javascript, SCSS 적용 및 Three.js / GSAP 라이브러리를 사용하
   
   
 ## 회고  
-### Native Javascript의 사용 및 프레임워크 사용 유무의 차이점과 Three.js 학습 내용 및 3D, Shader 인터랙션 구현사항, Frame Rate 속도, 렌더링 최적화를 중심으로 서술
+### Native Javascript의 사용 및 프레임워크 사용 유무의 차이점과 Three.js 학습 내용 및 3D 애니메이션/인터랙션, Shader 구현사항, Frame Rate 속도, 렌더링 최적화를 중심으로 서술
 
 ### Vanilla Javascript
   
