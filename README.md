@@ -118,7 +118,7 @@ css transition-timing-function의 cubic-bezier이 애니메이션의 움직임�
 
 ### Three.js  
   
-해당 프로젝트에서는 이전의 React 환경에서 WebGL을 간편하게 사용할 수 있었던 @react-three/fiber 라이브러리 대신 직접 Three.js 라이브러리를 import해서 사용하였습니다. scene과 renderer, animate 함수를 직접 선언하고 카메라, 광원 및 톤 매핑과 그림자, geometry와 재질을 다루면서 3D 프로그래밍 학습의 폭을 넓힐 수 있었습니다.
+해당 프로젝트에서는 이전의 React 환경에서 WebGL을 간편하게 사용할 수 있었던 @react-three/fiber 라이브러리 대신 직접 Three.js 모듈을 import해서 사용하였습니다. scene과 renderer, animate 함수를 직접 선언하고 카메라, 광원 및 톤 매핑과 그림자, geometry와 재질을 다루면서 3D 프로그래밍 학습의 폭을 넓힐 수 있었습니다.
 
 Blender로 gltf 모델들을 작업하여 로드하였고, 애니메이션을 구현하면서 GSAP 라이브러리 기능 일부를 사용하였습니다. 해당 과정에서 gltf 파일이 너무 커지지 않도록 particle의 수를 조정하면서 동시에 모델이 시각적으로 불완전해보이지 않는 균형을 맞춰야 했고, 비디오 텍스쳐 로드 방식을 학습하고 구현하였습니다.  
   
