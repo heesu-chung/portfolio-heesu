@@ -140,4 +140,4 @@ glsl에 uniform으로 time(f), resolution(v2), 마우스 포지션 및 텍스쳐
   
 해당 프로젝트에선 자바스크립트로 스타일링 변환 진행시 웹 표준을 위해 벤더 프리픽스를 고려한 transform / transition 코드가 추가했고(MozTransform, webkitTransform, OTransform), 기존에 여러번 사용하였던 gif 대신 Video를 적극 사용, SVG Blend 효과와 소개 파트 별 진행도에 따른 원형 SVG 인터랙션을 구현했습니다.  
   
-또한 기존 React / Vue 프로젝트에선 하지 못했던 SEO 작업을 진행할 수 있었습니다. robots.txt를 별개로 작성하여, 대부분의 콘텐츠를 크롤링 봇이 읽을 수 있도록 하였으며, 개인 정보가 들어있는 resume.pdf로의 접근은 금지시켰습니다.   
+또한 기존 React / Vue SPA(Single Page App) 구현에선 하지 못했던 SEO 작업을 진행할 수 있었습니다. robots.txt를 별개로 작성하여, 대부분의 콘텐츠를 크롤링 봇이 읽을 수 있도록 하였으며, 개인 정보가 들어있는 resume.pdf로의 접근은 금지시켰습니다.   
