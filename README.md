@@ -27,7 +27,7 @@ Vanilla Javascript, SCSS 적용 및 Three.js / GSAP 라이브러리를 사용하
   
 ![LightHouseResult](https://user-images.githubusercontent.com/68191058/205141311-2148ec99-5c3d-45b0-ab5c-358af984244b.JPG)
   
-세부적인 기능 구현들은 아래과 같습니다.  
+세부적인 기능 구현들은 아래와 같습니다.  
 
 ## 주요 구현사항  
   
