@@ -64,7 +64,8 @@ Vanilla Javascript, SCSS 적용 및 Three.js / GSAP 라이브러리를 사용하
   
 - Flex box를 이용한 레이아웃 구성
 - WebGL(Three.js) Scene 구성  
-- gsap 라이브러리 scrollTrigger 및 timeline을 활용한 3D 애니메이션 구현  
+- gsap 라이브러리 scrollTrigger 및 timeline을 활용한 3D 애니메이션 구현
+- 카메라 이동, 모델 이동 구현
 - blender 3D model 제작 및 로드   
 - Geometry 비디오 텍스쳐 매핑   
 - 스크롤 기반 텍스트 전환 구현  
